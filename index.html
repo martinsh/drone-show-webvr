@@ -6,7 +6,7 @@
     <title>Basemotion Drone Shows in WebVR</title>
     <meta name="description" content="Hello, WebVR! • A-Frame">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-extras@3.3.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene background="color: #62667E">
@@ -17,10 +17,7 @@
       </a-assets>
 
       <a-entity gltf-model="#monkeyModel" animation-mixer ></a-entity>
-      <a-entity collada-model="#cubeModel" animation-mixer ></a-entity>
-      <a-entity collada-model-legacy="#cubeModel" animation-mixer ></a-entity>
-      <a-entity collada-model="#cubeModel" ></a-entity>
-      <a-entity collada-model-legacy="#cubeModel" ></a-entity>
+      <a-entity collada-model-legacy="#cubeModel"></a-entity>
 
       <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" shadow></a-sphere>
